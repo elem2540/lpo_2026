@@ -38,7 +38,7 @@ i = 0
 lista_voti = CListaVoti()
 
 while i < num:
-    print(f"Inserisci dati esame {i+1}: ")
+    print(f"Inserisci i dati dell'esame {i+1}: ")
     lista_voti.aggiungi_esame()
     i += 1
 
