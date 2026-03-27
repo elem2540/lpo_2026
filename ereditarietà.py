@@ -27,6 +27,7 @@ class CDocente (CPersona):
 class CAnagrafica:
     def __init__(self):
         self._persone = {}
+        """self._persone = []"""
 
     def _aggiungi_studente(self) -> CStudente:
         nome = input("Inserisci il nome: ")
@@ -46,16 +47,29 @@ class CAnagrafica:
         scelta = int(input("Vuoi inserire uno studente (premi 0) o un docente (premi 1)? "))
         if scelta == 0:
             persona = self._aggiungi_insegnante()
+            self._persone[persona.nome] = persona
         else:
             if scelta == 1:
                 persona = self._aggiungi_studente()
+                self._persone[persona.nome] = persona
             else:
                 print("Scelta non disponibile!")
-        self._persone[persona.nome] = persona
 
     def cerca_persona(self):
         nome = input("Inserisci il nome della persona da cercare: ")
         self._persone[nome].stampa_dati()
+
+    """"
+    def cerca_persona(self):
+        nome = input("Inserisci il nome della persona da cercare: ")
+        cognome = input("Inserisci il cognome della persona da cercare: ")
+        i = 0
+        while i < len(self._persone):
+            persona = self._persone[i]
+                if persona.nome == nome and persona.cognome == cognome:
+                    self.persone[i].stampa_dati()
+            i += 1
+    """
 
 
 anagrafica = CAnagrafica()
@@ -63,5 +77,3 @@ anagrafica.aggiungi_persona()
 anagrafica.aggiungi_persona()
 
 anagrafica.cerca_persona()
-
-
