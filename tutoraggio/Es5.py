@@ -1,13 +1,13 @@
 class CPoint:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+    def __init__(self, x, y) -> None:
+        self.x: float = x
+        self.y: float = y
 
-    def reset(self):
+    def reset(self) -> None:
         self.x = 0
         self.y = 0
 
-    def print_coordinates(self):
+    def print_coordinates(self) -> None:
         print("x: ", self.x, "y: ", self.y)
 
 
