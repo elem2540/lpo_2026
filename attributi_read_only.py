@@ -2,7 +2,7 @@ class CSensoreTemperatura:
 
     def __init__(self, numero_serie, temperatura):
         self._numero_serie = self._controllo_numero_serie(numero_serie)
-        self._temperatura = self._controllo_temperatura(temperatura)
+        self.temperatura = temperatura  # Utilizza il setter per la validazione
 
     @property
     def numero_serie(self):
@@ -24,12 +24,6 @@ class CSensoreTemperatura:
             print("La temperatura deve essere compresa tra -100 e 100 gradi Celsius.")
             nuova_temperatura = float(input("Inserisci una temperatura valida: "))
         self._temperatura = nuova_temperatura
-
-    def _controllo_temperatura(self,temperatura):
-        while temperatura < -100 or temperatura > 100:
-            print("La temperatura deve essere compresa tra -100 e 100 gradi Celsius.")
-            temperatura = float(input("Inserisci una temperatura valida: "))
-        return temperatura
 
 
 # Esempio di utilizzo
