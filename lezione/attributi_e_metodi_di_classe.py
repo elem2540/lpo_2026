@@ -1,14 +1,14 @@
 class CProgrammatore:
     stipendio_base = 1500
 
-    def __init__(self, nome, cognome):
+    def __init__(self, nome, cognome) -> None:
         self.nome = nome
         self.cognome = cognome
 
 
 class CProgrammatoreJunior(CProgrammatore):
     @classmethod
-    def calcola_stipendio(cls, mese):
+    def calcola_stipendio(cls, mese) -> int:
         if mese == 12:
             return cls.stipendio_base + 500
         else:
@@ -17,7 +17,7 @@ class CProgrammatoreJunior(CProgrammatore):
 
 class CProgrammatoreSenior(CProgrammatore):
     @classmethod
-    def calcola_stipendio(cls, mese):
+    def calcola_stipendio(cls, mese) -> int:
         if mese == 12:
             return cls.stipendio_base + 1000
         else:
