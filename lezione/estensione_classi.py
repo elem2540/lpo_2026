@@ -13,4 +13,3 @@ if __name__ == "__main__":
     lista.append(3)
     print(lista)
     lista.append(2)
-
