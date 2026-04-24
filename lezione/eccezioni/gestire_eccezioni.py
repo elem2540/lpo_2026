@@ -25,14 +25,17 @@ class CLoginManager:
         self._login_system = login_system
 
     def login_da_tastiera(self):
-        try:
-            username = input("inserisci l'username ")
-            password = input("inserisci la password ")
-            self._login_system.login(username, password)
-        except UsernameError as e:
-            print(e)
-        except PasswordError as e:
-            print(e)
+        while True:
+            try:
+                username = input("inserisci l'username ")
+                password = input("inserisci la password ")
+                self._login_system.login(username, password)
+                print("Login effettuato con successo!")
+                break
+            except UsernameError as e:
+                print(e)
+            except PasswordError as e:
+                print(e)
 
 
 if __name__ == "__main__":
