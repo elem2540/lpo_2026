@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class CProdotto:
+class CProdotto(ABC):
     def __init__(self, codice_prodotto, prezzo, anno_vendita, anni_garanzia):
         self._codice_prodotto = codice_prodotto
         self._prezzo = prezzo
@@ -23,6 +23,8 @@ class CElettronica(CProdotto):
     def calcola_garanzia(self):
         if self._anni_garanzia == 4:
             return 500
+        else:
+            return 0
 
 
 class CElettrodomestici(CProdotto):
@@ -34,6 +36,7 @@ class CElettrodomestici(CProdotto):
             return 250
         if self._anni_garanzia == 5:
             return 400
+        return 0
 
 
 telefono = CElettronica(123, 10, 2026, 4)

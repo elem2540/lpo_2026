@@ -1,7 +1,3 @@
-[123| 2026] Base: €10 - Garanzia: 4 anni (+500€) - Totale: 510€
-[789| 2026] Base: €15 - Garanzia: 4 anni (+500€) - Totale: 515€
-[456| 2026] Base: €20 - Garanzia: 5 anni (+400€) - Totale: 420€
-[321| 2026] Base: €25 - Garanzia: 3 anni (+250€) - Totale: 275€
 [123| 2026] Base: EURO 10 - Garanzia: 4 anni (+500 EURO) - Totale: 510 EURO
 [789| 2026] Base: EURO 15 - Garanzia: 4 anni (+500 EURO) - Totale: 515 EURO
 [456| 2026] Base: EURO 20 - Garanzia: 5 anni (+400 EURO) - Totale: 420 EURO

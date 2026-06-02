@@ -7,7 +7,7 @@ class CIterator(Iterator):
         self.idx = 0
 
     def __next__(self):
-        if self.idx < len(self._lista):
+        if self.idx < len(self._lista)-1:
             element = self._lista[self.idx]
             self.idx += 2
             return element

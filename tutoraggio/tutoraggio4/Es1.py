@@ -2,7 +2,7 @@ class CUser:
     def __init__(self, tax_code, birth_year, postal_code):
         self._tax_code = tax_code
         self._birth_year = birth_year
-        self._postal_code = postal_code
+        self.postal_code = postal_code
 
     @property
     def tax_code(self):

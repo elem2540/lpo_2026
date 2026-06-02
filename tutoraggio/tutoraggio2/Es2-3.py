@@ -1,5 +1,4 @@
-from math import pi
-from math import sqrt
+from math import pi, sqrt
 
 
 class CPoint:
@@ -17,8 +16,7 @@ class CPoint:
 
 class CCircle:
     def __init__(self, x: float, y: float, raggio: float) -> None:
-        self.x: float = x
-        self.y: float = y
+        self.centro = CPoint(x, y)
         self.raggio: float = raggio
 
     def area(self) -> float:
